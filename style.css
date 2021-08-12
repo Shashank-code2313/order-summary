@@ -1,0 +1,119 @@
+:root{
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--PaleBlue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    max-width: 28.125em;
+    background-color: white;
+    border-radius: 24px;
+    color: var(--DarkBlue);
+}
+.top-background{
+    background-image: url(/images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28.125em;
+    height: 13.75em;
+    border-radius: 24px 24px 0 0 ;
+}
+
+.order-summary{
+    text-align: center;
+    padding: 3.25em 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+#heading{
+    padding-bottom: 1.5rem;
+}
+
+#content{
+    max-height: 4.3125rem;
+    line-height: 1.5;
+    color: var(--DesaturatedBlue);
+    margin-bottom: 1.4375rem;
+}
+
+.annual-plan{
+    display: flex;
+    padding:1.5rem;
+    border-radius: 16px;
+    background-color: var(--VeryPaleBlue);
+    margin-bottom: 30px;
+}
+
+.info{
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.info p{
+    padding-top: 10px;
+    font-weight: 500;
+    color: var(--DesaturatedBlue);
+}
+
+.annual-plan > a{
+    align-self: center;
+    padding-left: 5.5rem;
+    font-weight: 700;
+    color: var(--BrightBlue);
+}
+#payment-btn{
+    color: white;
+    background-color: var(--BrightBlue);
+    border: none;
+    border-radius: 16px;
+    font-weight: 700;
+    padding: 1.0625rem 0;
+    box-shadow:0px 18px 24px 0px  #97a6e7;
+}
+
+#cancel{
+    padding-top: 35px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--DesaturatedBlue);
+}
+
+.annual-plan > a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+#payment-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#cancel:hover{
+    color: var(--DarkBlue);
+}
